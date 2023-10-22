@@ -2,7 +2,7 @@
 
 A structure with microservices to save users and send e-mails using rabbitMQ. The purpose of that project are save new user in database and send a email for that user.
 
-Okay, how does it work? There are two microservices, each with its own database. The first project, called 'user,' is responsible for saving new user registrations in its own database and sending a message to the RabbitMQ platform to queue the message. RabbitMQ receives the message and forwards it to the second project, 'email.' The email project retrieves the message from RabbitMQ, sends an email to the user, and then saves the message in its own database.
+Okay, how does it work? There are two microservices, each with its own database. The first project, called 'user' is responsible for saving new user registrations in its own database and sending a message to the RabbitMQ platform to queue the message. RabbitMQ receives the message and forwards it to the second project, 'email'. The email project retrieves the message from RabbitMQ, sends an email to the user, and then saves the message in its own database.
 
 ### Diagram
 <div align="center" >
