@@ -29,14 +29,15 @@ Okay, how does it work? There are two microservices, each with its own database.
   - The user project is using port 8081, and the email project is using port 8082
   - I've set up different ports to access the databases. The user project uses port 5433, and the email project uses port 5432. However, if you prefer, the projects can use the same port and adjust it in the application.properties file
   - If you don't have an account in CloudAMQP, you will need to create one. Once the account is created, you can obtain the URL to configure access in the application.properties file.
-  - Start the both projects and use this:
-
-```
-{
-    "name":"Unnamed",
-    "email":"unnamed@gmail.com",
-    "password":"yourpassword"
-}
-
-```
+  - Start the both projects and use this in user project:
+    - Method: POST
+    - Endpoint: localhost:8081/users
+    ```
+    {
+        "name":"Unnamed",
+        "email":"unnamed@gmail.com",
+        "password":"yourpassword"
+    }
+    
+    ```
 
