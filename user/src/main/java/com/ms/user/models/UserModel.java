@@ -1,6 +1,5 @@
 package com.ms.user.models;
 
-
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -12,20 +11,10 @@ public class UserModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private UUID userId;
     private String name;
     private String email;
-    private String password;
-
-    public UserModel(){}
-
-    public UserModel(UUID userId, String name, String email, String password) {
-        this.userId = userId;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-    }
 
     public UUID getUserId() {
         return userId;
@@ -49,13 +38,5 @@ public class UserModel implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }

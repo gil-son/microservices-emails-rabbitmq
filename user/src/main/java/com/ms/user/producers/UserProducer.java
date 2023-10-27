@@ -20,14 +20,11 @@ public class UserProducer {
 
     public void publishMessageEmail(UserModel userModel){
         var emailDto = new EmailDto();
-        emailDto.setUserID(userModel.getUserId());
+        emailDto.setUserId(userModel.getUserId());
         emailDto.setEmailTo(userModel.getEmail());
         emailDto.setSubject("Register was realized with success");
         emailDto.setText(userModel.getName() + ", welcome! \n We are pleased with your registration! Enjoy it!");
 
         rabbitTemplate.convertAndSend("", routingKey, emailDto);
     }
-
-
-
 }
