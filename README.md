@@ -43,8 +43,8 @@ Okay, how does it work? There are two microservices, each with its own database.
 
 ### Source
 
-- <a href="https://www.decoderproject.com/">Decoder</a>
+<p><a href="https://www.decoderproject.com/">Decoder</a></p>
 
-### Resource
-- <a href="https://www.rabbitmq.com/">RabbitMQr</a>
+### Resources
+- <a href="https://www.rabbitmq.com/">RabbitMQ</a>
 - <a href="https://support.google.com/accounts/answer/185833">Google Senha App</a>
