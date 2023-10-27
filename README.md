@@ -35,8 +35,7 @@ Okay, how does it work? There are two microservices, each with its own database.
     ```
     {
         "name":"Unnamed",
-        "email":"unnamed@gmail.com",
-        "password":"yourpassword"
+        "email":"unnamed@gmail.com"
     }
     
     ```
