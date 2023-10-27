@@ -40,3 +40,11 @@ Okay, how does it work? There are two microservices, each with its own database.
     
     ```
 
+
+### Source
+
+- <a href="https://www.decoderproject.com/">Decoder</a>
+
+### Resource
+- <a href="https://www.rabbitmq.com/">RabbitMQr</a>
+- <a href="https://support.google.com/accounts/answer/185833">Google Senha App</a>
